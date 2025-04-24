@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+  <channel>
+    <title>Nuevas Actualizaciones</title>
+    <link>https://adryz24.github.io/PaginaWeb/</link>
+    <description>Nuevos personajes añadidos, nuevas zonas, nuevas misiones y nueva historia.</description>
+    <language>es</language>
+
+    <item>
+      <title>Personajes Nuevos</title>
+      <link>https://adryz24.github.io/PaginaWeb/</link>
+      <description>Actualización en los personajes. Se han añadido nuevos personajes.</description>
+    
+    </item>
+
+    <item>
+      <title>Zonas Nuevas</title>
+      <link>https://adryz24.github.io/PaginaWeb/</link>
+      <description>Actualización en Mapas. Se han añadido nuevas zonas del juego.</description>
+     
+    </item>
+
+    <item>
+      <title>Misiones Nuevas</title>
+      <link>https://adryz24.github.io/PaginaWeb/</link>
+      <description>Actualización en las misiones. Se han añadido nuevas misiones.</description>
+     
+    </item>
+
+    <item>
+      <title>Historia</title>
+      <link>https://adryz24.github.io/PaginaWeb/</link>     
+ 	<description>Actualización en la historia. Se han añadido nuevos eventos.</description>
+ 
+    </item>
+
+  </channel>
+</rss>
+
