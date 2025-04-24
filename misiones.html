@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Misiones - Pokémon Aventura</title>
+    <link rel="stylesheet" href="css/cssmisiones.css">
+</head>
+<body>
+<!-- Botón de redirección -->
+<button class="boton" onclick="window.location.href='menu.html'">🡐</button>
+
+<header>
+    <h1>Misiones - Pokémon Aventura</h1>
+</header>
+
+<main>
+    <h2>Misiones</h2>
+    <ul>
+        <li>
+            <h3>Misión 1: El Rayo y el Comienzo del Viaje</h3>
+            <p><strong>Objetivo:</strong> Explorar la casa y encontrar la carta de los padres.</p>
+            <p><strong>Descripción:</strong> Curro se despierta tras el rayo y descubre que sus padres y su hermano han desaparecido. En la habitación, encuentra una carta que le guía sobre qué hacer. Antes de poder avanzar, tendrá que registrar la casa, encontrar su mochila y leer el diario dejado por sus padres.</p>
+            <p><strong>Ubicación:</strong> Casa de Curro.</p>
+            <div class="rewards">
+                <h4>Recompensas:</h4>
+                <ul>
+                    <li>Pokéballs</li>
+                    <li>Pokédex</li>
+                    <li>Diario</li>
+                    <li>Nota de los padres con indicaciones para avanzar</li>
+                </ul>
+            </div>
+            <button class="check-button" onclick="toggleMission(this)">Completada</button>
+        </li>
+
+        <li>
+            <h3>Misión 2: El Misterioso Enlace</h3>
+            <p><strong>Objetivo:</strong> Seguir el enlace en el mensaje binario y descargar el juego.</p>
+            <p><strong>Descripción:</strong> Después de encontrar el código binario, Curro debe usar su ordenador para seguir el enlace y descargar el misterioso programa. Sin embargo, el enlace trae consigo más sorpresas, pues al iniciar el juego, Curro se teletransporta dentro de él.</p>
+            <p><strong>Ubicación:</strong> Ordenador de Curro (antes de la teletransportación).</p>
+            <div class="rewards">
+                <h4>Recompensas:</h4>
+                <ul>
+                    <li>Nuevo mundo virtual donde está atrapado</li>
+                    <li>Acceso al menú del juego</li>
+                </ul>
+            </div>
+            <button class="check-button" onclick="toggleMission(this)">Completada</button>
+        </li>
+
+        <li>
+            <h3>Misión 3: La Ruta de La China y el Bazar Li Alimentación</h3>
+            <p><strong>Objetivo:</strong> Comprar suministros para continuar el viaje.</p>
+            <p><strong>Descripción:</strong> Al llegar a la Ruta de La China, Curro debe ir al Bazar Li Alimentación para comprar Pokéballs y pociones. Sin embargo, la tienda también es un lugar donde conocerá a un hombre misterioso que le da caramelos raros para facilitar su aventura.</p>
+            <p><strong>Ubicación:</strong> Bazar Li Alimentación.</p>
+            <div class="rewards">
+                <h4>Recompensas:</h4>
+                <ul>
+                    <li>Pokéballs</li>
+                    <li>Ron (pociones)</li>
+                    <li>Caramelos raros</li>
+                </ul>
+            </div>
+            <button class="check-button" onclick="toggleMission(this)">Completada</button>
+        </li>
+
+        <li>
+            <h3>Misión 4: El Centro Pokémon y la Pelea con los Yonkis</h3>
+            <p><strong>Objetivo:</strong> Salvar al peluquero del ataque de los yonkis.</p>
+            <p><strong>Descripción:</strong> Al llegar al primer pueblo, Parco, Curro se encuentra con un centro Pokémon bajo ataque por yonkis. Debe enfrentarse a ellos para salvar al peluquero, quien se convierte en un aliado importante en la misión.</p>
+            <p><strong>Ubicación:</strong> Centro Pokémon de Parco.</p>
+            <div class="rewards">
+                <h4>Recompensas:</h4>
+                <ul>
+                    <li>Ayuda del peluquero</li>
+                    <li>Poción de restauración</li>
+                </ul>
+            </div>
+            <button class="check-button" onclick="toggleMission(this)">Completada</button>
+        </li>
+
+        <li>
+            <h3>Misión 5: El Conflicto entre Bandas</h3>
+            <p><strong>Objetivo:</strong> Visitar a los Blancos y demostrar que no eres enemigo.</p>
+            <p><strong>Descripción:</strong> Después de salvar al peluquero, los yonkis de la banda Parchís creen que Curro es un miembro de los Blancos. Para continuar avanzando, Curro debe visitar a los Blancos, quienes le ayudarán si demuestra ser aliado. Allí, enfrentará algunos desafíos y batallas.</p>
+            <p><strong>Ubicación:</strong> Base de la banda de los Blancos.</p>
+            <div class="rewards">
+                <h4>Recompensas:</h4>
+                <ul>
+                    <li>Objetos para Pokémon</li>
+                    <li>MTs (Máquinas Técnicas)</li>
+                    <li>Pokémon de nivel superior</li>
+                </ul>
+            </div>
+            <button class="check-button" onclick="toggleMission(this)">Completada</button>
+        </li>
+
+        <li>
+            <h3>Misión 6: La Guerra de Bandas</h3>
+            <p><strong>Objetivo:</strong> Derrotar a los miembros del Parchís.</p>
+            <p><strong>Descripción:</strong> Para continuar su camino, Curro debe ir al barrio del Parchís y enfrentarse a los tres yonkis que lo controlan, y finalmente, al líder de la banda. Después de vencerlos, Curro obtiene la llave para el gimnasio de la zona.</p>
+            <p><strong>Ubicación:</strong> Base de la banda Parchís.</p>
+            <div class="rewards">
+                <h4>Recompensas:</h4>
+                <ul>
+                    <li>Llave del gimnasio</li>
+                    <li>Pokémon liberados</li>
+                    <li>PokéDólares</li>
+                </ul>
+            </div>
+            <button class="check-button" onclick="toggleMission(this)">Completada</button>
+        </li>
+
+
+
+    </ul>
+</main>
+
+<script>
+    function toggleMission(button) {
+        const li = button.parentElement;
+        li.classList.toggle('completed');
+    }
+</script>
+
+</body>
+</html>

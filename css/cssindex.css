@@ -1,0 +1,187 @@
+/* Estilos generales */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Imagen de fondo */
+body {
+    background-image: url(imagenescss/fondo.gif); /* la ruta de tu imagen */
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Fija la imagen al fondo mientras se desplaza */
+}
+
+/* Centrado del formulario */
+.login-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos del formulario */
+.login-form {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con transparencia */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    text-align: center;
+    margin-bottom: 20px; /* Añadido para separar el formulario de las redes sociales */
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px -10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Redes sociales: Posicionarlas en la esquina inferior derecha y hacerlas más pequeñas */
+.social-media {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+}
+
+.social-media li {
+    margin: 0 8px;
+}
+
+.social-media li a {
+    display: block;
+    width: 40px; /* Reducido el tamaño */
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px; /* Reducido el tamaño de los íconos */
+    text-align: center;
+    text-decoration: none;
+    color: #404040;
+    position: relative;
+    transition: color 0.5s;
+}
+
+.social-media li a span {
+    position: absolute;
+    background: #404040;
+    transition: transform 0.5s;
+}
+
+.social-media li a span:nth-child(1),
+.social-media li a span:nth-child(3) {
+    width: 100%;
+    height: 3px;
+}
+
+.social-media li a span:nth-child(1) {
+    top: 0;
+    left: 0;
+    transform-origin: right;
+}
+
+.social-media li a:hover span:nth-child(1) {
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.social-media li a span:nth-child(3) {
+    bottom: 0;
+    left: 0;
+    transform-origin: left;
+}
+
+.social-media li a:hover span:nth-child(3) {
+    transform: scaleX(0);
+    transform-origin: right;
+}
+
+.social-media li a span:nth-child(2),
+.social-media li a span:nth-child(4) {
+    width: 3px;
+    height: 100%;
+}
+
+.social-media li a span:nth-child(2) {
+    top: 0;
+    left: 0;
+    transform-origin: bottom;
+    transform: scaleY(0);
+}
+
+.social-media li a:hover span:nth-child(2) {
+    transform: scaleY(1);
+    transform-origin: top;
+}
+
+.social-media li a span:nth-child(4) {
+    top: 0;
+    right: 0;
+    transform-origin: top;
+    transform: scaleY(0);
+}
+
+.social-media li a:hover span:nth-child(4) {
+    transform: scaleY(1);
+    transform-origin: bottom;
+}
+
+/* Colores al hacer hover */
+.facebook:hover {
+    color: #3b5998;
+}
+
+.facebook:hover span {
+    background: #3b5998;
+}
+
+.twitter:hover {
+    color: #1da1f2;
+}
+
+.twitter:hover span {
+    background: #1da1f2;
+}
+
+.instagram:hover {
+    color: #c32aa3;
+}
+
+.instagram:hover span {
+    background: #c32aa3;
+}
+
+
+/* Estilos para transición entre páginas */
+body {
+    opacity: 1;
+    transition: opacity 1s ease-in-out; /* Ajusta el tiempo aquí para cambiar la duración */
+}
+
+body.fade-out {
+    opacity: 0;
+}

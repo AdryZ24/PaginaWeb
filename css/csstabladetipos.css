@@ -1,0 +1,53 @@
+/* Variables de color */
+:root {
+    --c_0: #000000;
+    --c_1: #353540;
+    --text-color: #ffffff;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: var(--c_1);
+    color: var(--text-color);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 5px solid var(--c_0); /* Añade un borde negro alrededor de la imagen */
+    border-radius: 8px; /* Bordes redondeados en la imagen */
+}
+
+/* Estilo para el botón en la esquina superior izquierda */
+.boton {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px 20px;
+    background-color: #353540;
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    z-index: 10;
+}
+
+.boton:hover {
+    background-color: #353540;
+}

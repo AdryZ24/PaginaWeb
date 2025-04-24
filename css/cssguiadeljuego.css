@@ -1,0 +1,123 @@
+/* Variables de color */
+:root {
+    --c_0: #000000;
+    --c_1: #353540;
+    --text-color: #ffffff; /* blanco para el texto */
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo y posicionamiento general */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: var(--c_1);
+    font-family: 'Arial', sans-serif;
+    color: var(--text-color);
+}
+
+/* Contenedor principal para la guía */
+.l-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Cambié para una sola columna */
+    grid-gap: 30px;
+    width: 100%;
+    max-width: 1000px;
+    padding: 30px;
+    text-align: center;
+}
+
+/* Estilo de la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    background-color: var(--c_0);
+    border-radius: 8px;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #444;
+}
+
+table th {
+    background-color: var(--c_1);
+    color: var(--text-color);
+    font-size: 1.2em;
+}
+
+table td {
+    background-color: #222;
+    color: var(--text-color);
+}
+
+table tr:nth-child(even) {
+    background-color: #333;
+}
+
+table ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+table ul li {
+    margin: 8px 0;
+}
+
+/* Resaltado de Capítulos */
+td:first-child {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: var(--text-color);
+}
+
+/* Estilo de los enlaces */
+a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: inherit; /* El texto del enlace tendrá el color heredado (cian) */
+}
+
+/* Diseño responsivo */
+@media (max-width: 768px) {
+    .l-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    table th, table td {
+        font-size: 0.9em;
+    }
+    
+    .b-game-card__title {
+        font-size: 16px;
+    }
+}
+ /* Estilo para el botón en la esquina superior izquierda */
+ .boton {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px 20px;
+    background-color: #353540;
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    z-index: 10;
+}
+
+.boton:hover {
+    background-color: #353540;
+}
